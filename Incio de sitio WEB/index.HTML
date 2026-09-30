@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>IRON GYM</title>
+
+    <style>
+
+        /* =========================
+           ESTILOS GENERALES
+           ========================= */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #101010;
+            color: white;
+        }
+
+
+        /* =========================
+           ENCABEZADO
+           ========================= */
+
+        header {
+            background-color: #181818;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #f5c400;
+        }
+
+        .logo h2 {
+            color: #f5c400;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .logo span {
+            font-size: 11px;
+            color: #aaaaaa;
+        }
+
+
+        /* Menú */
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f5c400;
+        }
+
+
+        /* =========================
+           INICIO
+           ========================= */
+
+        #inicio {
+            text-align: center;
+            padding: 70px 20px;
+            background-color: #111111;
+        }
+
+        #inicio h1 {
+            font-size: 45px;
+            color: #f5c400;
+            margin-bottom: 20px;
+        }
+
+        #inicio p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        #inicio img {
+            width: 600px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+
+        /* Botón */
+
+        .boton {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 30px;
+            background-color: #f5c400;
+            color: #111111;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background-color: white;
+            transform: scale(1.05);
+        }
+
+
+        /* =========================
+           SERVICIOS
+           ========================= */
+
+        #servicios {
+            padding: 60px 8%;
+        }
+
+        #servicios h2 {
+            text-align: center;
+            color: #f5c400;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .servicio {
+            background-color: #202020;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            width: 28%;
+            display: inline-block;
+            vertical-align: top;
+            margin: 1%;
+            transition: 0.3s;
+        }
+
+        .servicio:hover {
+            transform: translateY(-8px);
+            border-color: #f5c400;
+        }
+
+        .servicio img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .servicio h3 {
+            color: #f5c400;
+            font-size: 24px;
+        }
+
+        .servicio p {
+            color: #dddddd;
+        }
+
+
+        /* =========================
+           CONTACTO
+           ========================= */
+
+        #contacto {
+            background-color: #181818;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #contacto h2 {
+            color: #f5c400;
+            font-size: 35px;
+        }
+
+        #contacto p {
+            margin: 10px;
+        }
+
+
+        /* =========================
+           PIE DE PÁGINA
+           ========================= */
+
+        footer {
+            background-color: #080808;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #f5c400;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         ENCABEZADO
+         ========================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <h2>IRON GYM</h2>
+
+            <span>FUERZA • DISCIPLINA • RESULTADOS</span>
+
+        </div>
+
+
+        <nav>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#servicios">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         INICIO
+         ========================= -->
+
+    <section id="inicio">
+
+        <h1>CONSTRUYE TU MEJOR VERSION</h1>
+
+        <p>
+            En IRON GYM te ayudamos a mejorar tu condicion fisica,
+            aumentar tu fuerza y alcanzar tus objetivos.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80"
+            alt="Gimnasio"
+        >
+
+        <br>
+
+        <a href="#servicios" class="boton">
+            VER SERVICIOS
+        </a>
+
+    </section>
+
+
+
+    <!-- =========================
+         SERVICIOS
+         ========================= -->
+
+    <section id="servicios">
+
+        <h2>¿Que ofrecemos?</h2>
+
+
+        <!-- Servicio 1 -->
+
+        <div class="servicio">
+
+            <img
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=500&q=80"
+                alt="Zona de pesas"
+            >
+
+            <h3>Zona de pesas</h3>
+
+            <p>
+                Contamos con mancuernas, barras y maquinas
+                para realizar diferentes ejercicios.
+            </p>
+
+        </div>
+
+
+        <!-- Servicio 2 -->
+
+        <div class="servicio">
+
+            <img
+                src="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=500&q=80"
+                alt="Area de cardio"
+            >
+
+            <h3>Area de cardio</h3>
+
+            <p>
+                Contamos con caminadoras y bicicletas
+                para mejorar la resistencia.
+            </p>
+
+        </div>
+
+
+        <!-- Servicio 3 -->
+
+        <div class="servicio">
+
+            <img
+                src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=500&q=80"
+                alt="Entrenamiento personalizado"
+            >
+
+            <h3>Entrenamiento personalizado</h3>
+
+            <p>
+                Contamos con orientacion para realizar
+                tus ejercicios y trabajar de acuerdo
+                con tus objetivos.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACTO
+         ========================= -->
+
+    <section id="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            <strong>Direccion:</strong>
+            Centro de San Juan del Rio, Queretaro
+        </p>
+
+        <p>
+            <strong>Horario:</strong>
+            Lunes a sabado, de 6:00 a 22:00 horas
+        </p>
+
+        <p>
+            <strong>Telefono:</strong>
+            427 123 4567
+        </p>
+
+        <p>
+            <strong>Correo:</strong>
+            contacto@irongym.com
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+         ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 IRON GYM. Todos los derechos reservados.
+        </p>
+
+        <p>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
